@@ -68,3 +68,79 @@ global.SESSION_ID = process.env.SESSION_ID ||  "SUHAIL_20_08_06_06_ewogICJjcmVkc
 module.exports = {
 
   menu: process.env.MENU || "", /**  Available @MENU @Schemes 1: Aztec_Md, 2: A17_Md, 3: Suhail-Md Default ---------- If Not Choose then it Randomely Pic One Of Them Each time **/
+
+  HANDLERS: process.env.PREFIX  || "",
+  BRANCH  : process.env.BRANCH  || "main",
+  VERSION : process.env.VERSION || "1.3.7",
+  caption : global.caption || "SAMKIEL BOT" ,
+ 
+  author : process.env.PACK_AUTHER|| "EZEKIEL SAMUEL",
+  packname: process.env.PACK_NAME || " EZEKIEL SAMUEL",
+  botname : process.env.BOT_NAME  || "SAMKIEL BOT",
+  ownernamE:process.env.OWNER_NAME|| "EZEKIEL SAMUEL",
+
+
+  errorChat : process.env.ERROR_CHAT || "true",
+  KOYEB_API : process.env.KOYEB_API  || "false",
+
+  REMOVE_BG_KEY : process.env.REMOVE_BG_KEY  || "",
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
+  HEROKU_API_KEY: process.env.HEROKU_API_KEY || "",
+    HEROKU_APP_NAME:process.env.HEROKU_APP_NAME|| "",
+  antilink_values:process.env.ANTILINK_VALUES|| "all",
+  HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
+
+
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "public",
+  LANG: ( process.env.THEME ||  "SAMKIEL"  ).toUpperCase(),
+
+
+
+};
+
+
+
+global.ELEVENLAB_API_KEY = process.env.ELEVENLAB_API_KEY || "";
+global.aitts_Voice_Id = process.env.AITTS_ID|| "37";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+global.rank = "updated"
+global.isMongodb = false; 
+let file = require.resolve(__filename)
+fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename}'`);delete require.cache[file];	require(file); })
+ 
+
+// ========================= [ Disables in V.1.2.8 ] ===============================\\  
+  //style : process.env.STYLE || "2",  // put '1' & "2" here to check bot styles
+  //readmessage:process.env.READ_MESSAGE|| "false",
+  //warncount: process.env.WARN_COUNT || 3,
+  //userImages:process.env.USER_IMAGES|| "text",  // SET IMAGE AND VIDEO URL FOR BOT MENUS 
+  //disablepm: process.env.DISABLE_PM || "false",
+  //MsgsInLog: process.env.MSGS_IN_LOG|| "false", // "true"  to see messages , "log" to open logs , "false" to hide logs messages
+
+//readcmds:process.env.READ_COMMANDS|| "false", 
+
+//alwaysonline:process.env.WAPRESENCE|| "typing...", // 'unavailable' | 'online' | 'composing' | 'recording' | 'paused'
+  //read_status: process.env.AUTO_READ_STATUS || "false",
+  //save_status: process.env.AUTO_SAVE_STATUS || "false",
+  //aitts_Voice_Id : process.env.AITTS_ID || "37",
+  //ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY  || "",
